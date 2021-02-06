@@ -20,9 +20,10 @@
 		   Electric Car
 		  </div>
 		  <nav class="nav">
-		   <a class="nav_link" href="#" id="btn">About</a>
-		   <a class="nav_link" href="hobbies.html">Our team</a>
-		   <a class="nav_link" href="contact.html">Contact</a>
+		   <a class="nav_link" href="#info">About</a>
+		   <a class="nav_link" href="#history">Slider</a>
+		   <a class="nav_link" href="#team">Our team</a>
+		   <a class="nav_link" href="#gall">Contact</a>
 		  </nav>
 		 </div>
 		</header>
@@ -88,7 +89,7 @@
       <div class="krasota">
         <div>ElectricCar</div>
       </div>
-      <div class="textaboutcar">
+      <div class="textaboutcar" id="history">
         <div class="contentiche">
           <h1>History</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -102,7 +103,7 @@
     <div class="krasota">
       <div>Team</div>
     </div>
-    <section class="team">
+    <section class="team" id="team">
       <div class="container">
         <div class="card">
           <div class="imxBox_card">
@@ -439,6 +440,15 @@
     })
 
     </script>
+	  <script type="text/javascript">
+	     function slowScroll(id) {
+		 var offset = 0;
+		 $('html, body').animate({
+		      scrollTop: $(id).offset().top - offset
+		 }, 1000);
+		 return false;
+	     }
+	 </script>
 
   </body>
 </html>
