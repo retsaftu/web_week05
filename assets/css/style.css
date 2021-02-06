@@ -1,0 +1,102 @@
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.6;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+
+.header {
+ width: 100%;
+ padding-top: 30px;
+ padding-bottom: 30px;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 1;
+ background-color: #333;
+}
+
+.header_inner{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+/* for logo SmartYurt */
+.header_logo {
+ font-size: 30px;
+ font-weight: 700;
+ color: #fff;
+}
+/* navBar */
+.nav {
+ font-size: 20px;
+ text-transform: uppercase;
+}
+
+.nav_link {
+ display: inline-block;
+ vertical-align: top;
+ margin: 0 15px;
+ position: relative;
+ color: #fff;
+ text-decoration: none;
+ transition: color .2s linear;
+
+}
+
+.nav_link::after{
+ content: "";
+ display: block;
+ width: 100%;
+ height: 3px;
+ background-color: #fce38a;
+ opacity: 0;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ z-index: 1;
+ transition: opacity .1s linear;
+}
+
+.nav_link:hover {
+ color: #fce38a;
+}
+
+.nav_link:hover::after {
+ opacity: 1;
+}
+/* end nav */
+
+.textaboutcar {
+	height: 100vh;
+	background-color: #333;
+	/* justify-content: center; */
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+.textaboutcar .contentiche{
+	max-width: 700px;
+	margin: auto;
+}
+.footer {
+	background-color: #1D1F20;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer a{
+	font-size: 20px;
+  text-transform: uppercase;
+
+}
+.footer p{
+	margin: 0;
+	color: #eee;
+}
